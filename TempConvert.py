@@ -5,13 +5,15 @@
 
 
 def main():
-  #Prompt the user for a Fahrenheit temperature
-  #Convert that temperature to celsius, rounding to 1 decimal percision
-  #Output converted temperature.
-  tempF = 80
+  #ask for input
+  tempF = float(input("Please enter a temperature in Farenheit: ")) #used float to allow partial degrees
+  #convert input
+  tempC = (tempF - 32) * 5 / 9 #f-c = (32°F − 32) × 5/9 = 0°C
+  #round to .1
+  tempC = round(tempC, 1)
+  #display output showing f is c
+  print(f"{tempF} degrees Fahrenheit is {tempC} degrees Celsius.") #fstring is easier to add 2 or more variables
 
-  tempC = tempF / 2
 
-  print(tempF, "is ", tempC, "degrees celsius.")
 if __name__ == '__main__':
   main()
