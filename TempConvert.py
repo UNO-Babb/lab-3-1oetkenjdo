@@ -1,7 +1,7 @@
 #TempConvert.py
-#Name:
-#Date:
-#Assignment:
+#Name: Jacob Oetken
+#Date: 2/8/25
+#Assignment: TEMPERATURE CONVERSION LAB 3
 
 
 def main():
